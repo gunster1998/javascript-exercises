@@ -3,10 +3,7 @@ const repeatString = function(word,itaration) {
     if (itaration<0){
         return "ERROR"
     }
-    for (let i = 0; i< itaration; i++){
-        result +=word;
-    }
-    return result;
+    return word.repeat(itaration);
 };
 
 // Do not edit below this line
