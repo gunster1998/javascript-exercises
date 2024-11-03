@@ -1,8 +1,13 @@
-# Exercise 08 - Calculator
+# Упражнение 08 - Калькулятор
 
-The goal for this exercise is to create a calculator that does the following:
+Цель этого упражнения — создать калькулятор, который выполняет следующие действия:
 
-add, subtract, get the sum, multiply, get the power, and find the factorial
+сложение, вычитание, получение суммы, умножение, возведение в степень и нахождение факториала.
 
-In order to do this please fill out each function with your solution. Make sure to return the value so you can test it in Jest! To see the expected value
-take a look at the spec file that houses the Jest test cases.
+Для этого, пожалуйста, заполните каждую функцию своим решением. Убедитесь, что функция возвращает значение, чтобы вы могли протестировать её с помощью Jest! Чтобы увидеть ожидаемое значение, загляните в файл спецификации, в котором находятся тестовые примеры для Jest.
+
+
+
+
+
+
