@@ -1,12 +1,12 @@
-# Exercise 10 - Fibonacci
+Задание 10 - Фибоначчи
 
-Create a function that returns a specific member of the Fibonacci sequence:
+Создайте функцию, которая возвращает конкретный элемент последовательности Фибоначчи:
 
-> A series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers.
-> In this exercise, the Fibonacci sequence used is 1, 1, 2, 3, 5, 8, etc.
-> To learn more about Fibonacci sequences, go to: https://en.wikipedia.org/wiki/Fibonacci_sequence
+> Последовательность чисел, в которой каждое число (число Фибоначчи) является суммой двух предыдущих чисел.
+> В этом упражнении используется последовательность Фибоначчи: 1, 1, 2, 3, 5, 8 и так далее.
+> Подробнее о последовательности Фибоначчи можно узнать здесь: https://ru.wikipedia.org/wiki/Последовательность_Фибоначчи
 
 ```javascript
-fibonacci(4); // returns the 4th member of the series: 3  (1, 1, 2, 3)
-fibonacci(6); // returns 8
+fibonacci(4); // возвращает 4-й элемент последовательности: 3  (1, 1, 2, 3)
+fibonacci(6); // возвращает 8
 ```
