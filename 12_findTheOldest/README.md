@@ -1,10 +1,10 @@
-# Exercise 12 - Find the Oldest
+# Упражнение 12 - Найдите самого старого
 
-Given an array of objects representing people with a birth and death year, return the oldest person.
+Дан массив объектов, представляющих людей с годом рождения и смерти. Ваша задача — вернуть самого старого человека.
 
-Now that you've reached the final exercise, you should be fairly comfortable getting the information you need from test case(s). Take a look at how the array of objects is constructed in this exercise's test cases to help you write your function.
+Теперь, когда вы добрались до последнего упражнения, вы должны чувствовать себя довольно уверенно в получении необходимой информации из тестового примера(ов). Посмотрите, как составлен массив объектов в тестовых примерах этого упражнения, чтобы помочь вам написать свою функцию.
 
-## Hints
-- You should return the whole person object, but the tests mostly just check to make sure the name is correct.
-- There are many ways of doing this using built-in array methods like `reduce`, or even chaining multiple! 
-- One of the tests checks for people with no death-date.. use JavaScript's Date function to get their age as of today.
+## Подсказки
+- Вам нужно вернуть весь объект человека, но тесты в основном проверяют только, чтобы имя было правильным.
+- Существует множество способов сделать это с использованием встроенных методов массива, таких как `reduce`, или даже с помощью цепочки нескольких методов!
+- Один из тестов проверяет людей, у которых нет даты смерти... используйте функцию `Date` в JavaScript, чтобы получить их возраст на сегодняшний день.
