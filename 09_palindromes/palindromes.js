@@ -1,8 +1,7 @@
 const palindromes = function (string) {
     const palindromeArray = string.trim().replace(/[^a-z0-9]/ig, '').toLowerCase().split('');
     const palidromReverse = [...palindromeArray].reverse();
-    console.log(palindromeArray === palidromReverse, palindromeArray,palidromReverse)
-        return palindromeArray.every((element,index) => element === palidromReverse[index])
+        return palindromeArray.every( (element,index) => element === palidromReverse[index]);
     }
 
 // Do not edit below this line

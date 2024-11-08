@@ -1,8 +1,8 @@
 const getTheTitles = function(object) {
     const result = object.map(function (item){
-        return item.title
+        return item.title;
     })
-    return result
+    return result;
 };
 
 // Do not edit below this line

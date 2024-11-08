@@ -15,15 +15,15 @@ const multiply = function(array) {
 };
 
 const power = function(a,b) {
-  return a ** b
+  return a ** b;
 };
 
 const factorial = function(factorial) {
-  let result = 1
-	for (let i = 1; i <= factorial; i++){
+  let result = 1;
+	for (let i = 1; i <= factorial; i++) {
     result *= i;
   } 
-  return result
+  return result;
 };
 
 // Do not edit below this line
