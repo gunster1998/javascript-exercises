@@ -1,25 +1,51 @@
 const findTheOldest = function(object) {
-    const arraySort = object.sort(function(onePerson,twoPerson){
-        const dateNow = new Date().getFullYear()
-        let ageOnePerson = 0
-        let ageTwoPerson = 0
-        if (onePerson.yearOfDeath){
-            ageOnePerson = onePerson.yearOfDeath - onePerson.yearOfBirth
+    const arraySort = object.map( (user) => {
+        const dateNow = new Date().getFullYear();
+        let agePerson = 0;
+
+        if (user.yearOfDeath){
+            agePerson = user.yearOfDeath - user.yearOfBirth;
         } else{
-            ageOnePerson = dateNow - onePerson.yearOfBirth
+            agePerson = dateNow - user.yearOfBirth;
         }
-        if(twoPerson.yearOfDeath){
-            ageTwoPerson = twoPerson.yearOfDeath - twoPerson.yearOfBirth
-        } else {
-            ageTwoPerson = dateNow - twoPerson.yearOfBirth
+
+        return {
+            ...user,
+            age: agePerson
         }
-        console.log(ageTwoPerson - ageOnePerson)
-        return ageTwoPerson - ageOnePerson
+    }).sort(function(onePerson,twoPerson) {
+        return twoPerson.age - onePerson.age;
     })
-    console.log(arraySort[0])
-    return arraySort[0]
+    return arraySort[0];
 
 };
+
+
+
+//Старый вариант
+// const findTheOldest = function(object) {
+//     const arraySort = object.sort(function(agePerson,twoPerson){
+//         const dateNow = new Date().getFullYear()
+//         let ageagePerson = 0
+//         let ageTwoPerson = 0
+
+//         if (agePerson.yearOfDeath){
+//             ageagePerson = agePerson.yearOfDeath - agePerson.yearOfBirth
+//         } else{
+//             ageagePerson = dateNow - agePerson.yearOfBirth
+//         }
+
+//         if(twoPerson.yearOfDeath){
+//             ageTwoPerson = twoPerson.yearOfDeath - twoPerson.yearOfBirth
+//         } else {
+//             ageTwoPerson = dateNow - twoPerson.yearOfBirth
+//         }
+
+//         return ageTwoPerson - ageagePerson
+//     })
+//     return arraySort[0]
+
+// };
 
 // Do not edit below this line
 module.exports = findTheOldest;
